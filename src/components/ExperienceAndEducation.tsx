@@ -2,6 +2,7 @@ import Image from 'next/image'
 import VirtualNetLogo from '../assets/virtual-net-logo-icon.png'
 import Cruzeiro from '../assets/cruzeirodosul.png'
 import Explorer from '../assets/explorer.png'
+import Link from 'next/link'
 
 export default function ExperienceAndEducation() {
   return (
@@ -18,9 +19,13 @@ export default function ExperienceAndEducation() {
             </div>
             <p className="mb-2">São Francisco, Pará</p>
             <p>Site institucional para uma empresa provedora de internet.</p>
-            <a className="text-blue-400 underline" href="#">
-              www.virtualnet.com
-            </a>
+            <Link
+              className="text-blue-400 underline"
+              target="_blank"
+              href="https://virtualnet.net.br/"
+            >
+              www.virtualnet.net.br
+            </Link>
           </div>
         </div>
       </div>
