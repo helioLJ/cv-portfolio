@@ -23,21 +23,6 @@ export default function Portfolio() {
       <h2 className="text-center text-2xl font-bold">Portfólio</h2>
       <div className="mt-7 flex justify-center gap-7">
         <button
-          onClick={() => setFilter('ReactJS')}
-          className={`${
-            filter === 'ReactJS' && 'text-orange-500'
-          } relative transition-opacity hover:opacity-60`}
-        >
-          ReactJS
-          <small className="absolute -right-3 -top-3">
-            {
-              projectsData.filter((project) =>
-                project.stacks.includes('ReactJS'),
-              ).length
-            }
-          </small>
-        </button>
-        <button
           onClick={() => setFilter('TypeScript')}
           className={`${
             filter === 'TypeScript' && 'text-orange-500'
@@ -53,6 +38,36 @@ export default function Portfolio() {
           </small>
         </button>
         <button
+          onClick={() => setFilter('TypeScript')}
+          className={`${
+            filter === 'JavaScript' && 'text-orange-500'
+          } relative transition-opacity hover:opacity-60`}
+        >
+          JavaScript
+          <small className="absolute -right-3 -top-3">
+            {
+              projectsData.filter((project) =>
+                project.stacks.includes('JavaScript'),
+              ).length
+            }
+          </small>
+        </button>
+        <button
+          onClick={() => setFilter('ReactJS')}
+          className={`${
+            filter === 'ReactJS' && 'text-orange-500'
+          } relative transition-opacity hover:opacity-60`}
+        >
+          ReactJS
+          <small className="absolute -right-3 -top-3">
+            {
+              projectsData.filter((project) =>
+                project.stacks.includes('ReactJS'),
+              ).length
+            }
+          </small>
+        </button>
+        <button
           onClick={() => setFilter('NextJS')}
           className={`${
             filter === 'NextJS' && 'text-orange-500'
@@ -63,6 +78,21 @@ export default function Portfolio() {
             {
               projectsData.filter((project) =>
                 project.stacks.includes('NextJS'),
+              ).length
+            }
+          </small>
+        </button>
+        <button
+          onClick={() => setFilter('TypeScript')}
+          className={`${
+            filter === 'Node.js' && 'text-orange-500'
+          } relative transition-opacity hover:opacity-60`}
+        >
+          Node.js
+          <small className="absolute -right-3 -top-3">
+            {
+              projectsData.filter((project) =>
+                project.stacks.includes('Node.js'),
               ).length
             }
           </small>

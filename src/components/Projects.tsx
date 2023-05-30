@@ -42,6 +42,21 @@ export default function Projects() {
           </small>
         </button>
         <button
+          onClick={() => setFilter('TypeScript')}
+          className={`${
+            filter === 'JavaScript' && 'text-orange-500'
+          } relative transition-opacity hover:opacity-60`}
+        >
+          JavaScript
+          <small className="absolute -right-3 -top-3">
+            {
+              projectsData.filter((project) =>
+                project.stacks.includes('JavaScript'),
+              ).length
+            }
+          </small>
+        </button>
+        <button
           onClick={() => setFilter('ReactJS')}
           className={`${
             filter === 'ReactJS' && 'text-orange-500'
@@ -67,6 +82,21 @@ export default function Projects() {
             {
               projectsData.filter((project) =>
                 project.stacks.includes('NextJS'),
+              ).length
+            }
+          </small>
+        </button>
+        <button
+          onClick={() => setFilter('TypeScript')}
+          className={`${
+            filter === 'Node.js' && 'text-orange-500'
+          } relative transition-opacity hover:opacity-60`}
+        >
+          Node.js
+          <small className="absolute -right-3 -top-3">
+            {
+              projectsData.filter((project) =>
+                project.stacks.includes('Node.js'),
               ).length
             }
           </small>

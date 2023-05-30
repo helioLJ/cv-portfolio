@@ -200,7 +200,7 @@ export const projectsData: projectsDataProps[] = [
       'API Backend usando Node.js para o teste técnico da Contato Seguro',
     github: 'https://github.com/helioLJ/contato-seguro-backend',
     live: '',
-    stacks: ['ReactJS', 'TypeScript', 'Redux', 'Redux Toolkit', 'CSS'],
+    stacks: ['Node.js', 'JavaScript', 'Express', 'SQLite', 'Knex', 'Jest'],
     coverUrl: 'https://i.imgur.com/ze6yUyC.png',
     gallery: [],
     priority: 'normal',
