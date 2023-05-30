@@ -45,7 +45,8 @@ export default function AboutMe() {
           </Link>
         </div>
         <Link
-          href="#"
+          href="https://drive.google.com/file/d/1870K-1HHnQzBjBR1STHf58PUPp2xE4lB/view?usp=sharing"
+          target="_blank"
           className="flex justify-end gap-2.5 text-left font-bold transition-opacity hover:opacity-40"
         >
           Download CV
