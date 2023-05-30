@@ -42,7 +42,7 @@ export default function Projects() {
           </small>
         </button>
         <button
-          onClick={() => setFilter('TypeScript')}
+          onClick={() => setFilter('JavaScript')}
           className={`${
             filter === 'JavaScript' && 'text-orange-500'
           } relative transition-opacity hover:opacity-60`}
@@ -87,7 +87,7 @@ export default function Projects() {
           </small>
         </button>
         <button
-          onClick={() => setFilter('TypeScript')}
+          onClick={() => setFilter('Node.js')}
           className={`${
             filter === 'Node.js' && 'text-orange-500'
           } relative transition-opacity hover:opacity-60`}
