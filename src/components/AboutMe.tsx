@@ -30,23 +30,26 @@ export default function AboutMe() {
         <p className="text-right">Igarapé-Açu, Pará, Brasil</p>
         <div className="flex justify-end gap-2">
           <Link
-            className="rounded bg-zinc-900 p-1 transition-all hover:-translate-y-0.5 hover:bg-zinc-700"
+            className="rounded bg-zinc-900 p-1 transition-opacity hover:opacity-40"
             href="https://www.linkedin.com/in/heliolj/"
             target="_blank"
           >
             <Linkedin className="text-zinc-50" />
           </Link>
           <Link
-            className="rounded bg-zinc-900 p-1 transition-all hover:-translate-y-0.5 hover:bg-zinc-700"
+            className="rounded bg-zinc-900 p-1 transition-opacity hover:opacity-40"
             href="https://github.com/helioLJ"
             target="_blank"
           >
             <Github className="text-zinc-50" />
           </Link>
         </div>
-        <Link href="#" className="flex justify-end gap-2.5 text-left font-bold">
+        <Link
+          href="#"
+          className="flex justify-end gap-2.5 text-left font-bold transition-opacity hover:opacity-40"
+        >
           Download CV
-          <Download className="stroke-1 text-zinc-900 transition-transform hover:-translate-y-0.5" />
+          <Download className="stroke-1 text-zinc-900 transition-transform" />
         </Link>
       </div>
     </div>

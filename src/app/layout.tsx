@@ -10,7 +10,7 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: 'Hélio Portfolio',
+  title: 'Hélio Portfólio',
   description: 'Meu portfólio pessoal estilo Curriculum Vitae.',
 }
 

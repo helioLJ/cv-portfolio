@@ -1,8 +1,12 @@
+'use client'
 import Image from 'next/image'
 import ProfilePicture from '../assets/avatar-profile.png'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
+  const pathname = usePathname()
+
   return (
     <header className="flex items-center justify-between">
       <Image
@@ -13,13 +17,17 @@ export default function Header() {
       <nav className="flex gap-10">
         <Link
           href="/"
-          className="font-bold transition-colors hover:text-zinc-600"
+          className={`${
+            pathname === '/' && 'text-orange-500'
+          } font-bold transition-opacity hover:opacity-60`}
         >
           currículo
         </Link>
         <Link
           href="/portfolio"
-          className="font-bold transition-colors hover:text-zinc-600"
+          className={`${
+            pathname === '/portfolio' && 'text-orange-500'
+          } font-bold transition-opacity hover:opacity-60`}
         >
           portfólio
         </Link>

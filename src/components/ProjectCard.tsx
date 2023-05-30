@@ -1,31 +1,31 @@
-import Image from 'next/image'
-import CoverExample from '../assets/spacetimeweb.png'
 import Link from 'next/link'
+import { projectsData, projectsDataProps } from '@/lib/projects'
 
-export default function ProjectCard() {
+interface ProjectCardProps {
+  title: string
+}
+
+export default function ProjectCard({ title }: ProjectCardProps) {
+  const project = projectsData.find(
+    (project) => project.title === title,
+  ) as projectsDataProps
+
   return (
-    <Link href="/portfolio/spacetimeweb">
-      <div className="relative h-[220px] overflow-hidden rounded-lg bg-zinc-500 transition-transform hover:-translate-y-2">
-        <div className="absolute z-20 flex h-full flex-col justify-center gap-10 p-4">
-          <h3 className="text-2xl font-bold text-zinc-50">Projeto</h3>
-          <div className="flex flex-wrap gap-3">
-            <span className="flex items-center rounded-full bg-zinc-50 px-2 font-bold">
-              Reactjs
-            </span>
-            <span className="flex items-center rounded-full bg-zinc-50 px-2 font-bold">
-              Reactjs
-            </span>
-            <span className="flex items-center rounded-full bg-zinc-50 px-2 font-bold">
-              Reactjs
-            </span>
-          </div>
-        </div>
-        <div className="absolute z-10 h-full w-full bg-zinc-900 opacity-60"></div>
-        <Image
-          className="absolute aspect-video w-full rounded-lg object-cover"
-          src={CoverExample}
-          alt=""
-        />
+    <Link
+      className="relative transition-transform hover:scale-105"
+      href={`/portfolio/${title}`}
+    >
+      <div
+        style={{
+          background: `url(${project.coverUrl}) no-repeat center / cover`,
+        }}
+        className="relative h-[250px] rounded-lg text-white"
+      >
+        <div className="before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:rounded-lg before:bg-card-gradient before:transition-colors before:content-['']"></div>
+      </div>
+      <div className="absolute left-0 top-0 z-10 flex h-full flex-col justify-center space-y-4 px-5 py-5 text-white">
+        <h2 className="text-2xl font-bold">{project.title}</h2>
+        <p>{project.description}</p>
       </div>
     </Link>
   )

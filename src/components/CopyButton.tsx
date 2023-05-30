@@ -22,9 +22,12 @@ export default function CopyButton({ content }: CopyButtonProps) {
   }, [show])
 
   return (
-    <button onClick={handleCopy} className="relative flex justify-end gap-2.5">
+    <button
+      onClick={handleCopy}
+      className="relative flex justify-end gap-2.5 transition-opacity hover:opacity-40"
+    >
       {content}
-      <Copy className="stroke-1 text-zinc-900 transition-transform hover:-translate-y-0.5" />
+      <Copy className="stroke-1 text-zinc-900" />
       <div
         className={`absolute -right-5 -top-7 rounded-md bg-green-500 px-2 py-1 text-xs text-white ${
           show ? 'opacity-1' : 'opacity-0'

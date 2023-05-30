@@ -10,6 +10,11 @@ module.exports = {
       fontFamily: {
         sans: 'var(--font-poppins)',
       },
+
+      backgroundImage: {
+        'card-gradient':
+          'linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
+      },
     },
   },
   plugins: [],
