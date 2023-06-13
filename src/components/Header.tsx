@@ -23,14 +23,14 @@ export default function Header() {
         >
           currículo
         </Link>
-        <Link
+        {/* <Link
           href="/portfolio"
           className={`${
             pathname === '/portfolio' && 'text-orange-500'
           } font-bold transition-opacity hover:opacity-60`}
         >
           portfólio
-        </Link>
+        </Link> */}
       </nav>
     </header>
   )

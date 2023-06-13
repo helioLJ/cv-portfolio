@@ -24,7 +24,7 @@ export default function CopyButton({ content }: CopyButtonProps) {
   return (
     <button
       onClick={handleCopy}
-      className="relative flex justify-end gap-2.5 transition-opacity hover:opacity-40"
+      className="relative flex justify-end gap-2.5 transition-colors hover:text-zinc-400"
     >
       {content}
       <Copy className="stroke-1 text-zinc-900" />

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Github, Globe } from 'lucide-react'
 import { projectsData, projectsDataProps } from '@/lib/projects'
-import Carousel from '@/components/Carousel'
+// import Carousel from '@/components/Carousel'
 
 interface PageProps {
   params: { project: string }
@@ -16,8 +16,8 @@ export default function Project({ params }: PageProps) {
 
   return (
     <>
-      <div className="mt-7 flex flex-col items-center justify-between gap-16 sm:flex-row">
-        <div className="flex w-full flex-col gap-10 sm:w-1/2">
+      <div className="mt-7 flex flex-col items-center justify-between gap-16">
+        <div className="flex w-full flex-col gap-10">
           <h1 className="text-3xl font-bold sm:text-4xl">{project.title}</h1>
           <p>{project.description}</p>
           <div className="flex gap-4">
@@ -51,17 +51,17 @@ export default function Project({ params }: PageProps) {
             ))}
           </div>
         </div>
-        <div className="w-full sm:w-1/2">
+        <div className="w-full">
           <Image
             className="w-full rounded-lg"
             src={project.coverUrl}
-            width={300}
-            height={200}
+            width={10000}
+            height={10000}
             alt={`Capa do projeto: ${project.title}`}
           />
         </div>
       </div>
-      {project.gallery.length > 0 && <Carousel slides={project.gallery} />}
+      {/* {project.gallery.length > 0 && <Carousel slides={project.gallery} />} */}
     </>
   )
 }

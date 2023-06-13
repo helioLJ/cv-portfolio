@@ -9,7 +9,7 @@ export default function AboutMe() {
       <div>
         <h1 className="flex-1 text-3xl font-bold text-zinc-900 sm:text-4xl">
           Hélio Lúcio,<br></br>
-          Fullstack Developer
+          Desenvolvedor Frontend
         </h1>
         <div className="mt-6 flex items-center gap-2">
           <div className="relative h-3 w-7 cursor-pointer rounded-full bg-orange-200">
@@ -18,8 +18,10 @@ export default function AboutMe() {
           Disponível
         </div>
         <p className="mt-2">
-          Web Developer Jr., pratico meus conhecimentos de programção em
-          projetos que geram valor para outras pessoas.
+          Jovem programador entusiasmado e apaixonado por tecnologia,
+          especializado em desenvolvimento web frontend. Com habilidades sólidas
+          em JavaScript, ReactJS e Next.js, sou capaz de criar experiências
+          digitais atraentes e responsivas.
         </p>
       </div>
 
@@ -45,7 +47,7 @@ export default function AboutMe() {
           </Link>
         </div>
         <Link
-          href="https://drive.google.com/file/d/1870K-1HHnQzBjBR1STHf58PUPp2xE4lB/view?usp=sharing"
+          href="https://drive.google.com/file/d/11Ai4IFbb4vrRSGfGUDa15HMEPxtqiF0t/view?usp=sharing"
           target="_blank"
           className="flex justify-end gap-2.5 text-left font-bold transition-opacity hover:opacity-40"
         >

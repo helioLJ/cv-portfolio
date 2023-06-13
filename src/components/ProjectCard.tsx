@@ -25,7 +25,7 @@ export default function ProjectCard({ title }: ProjectCardProps) {
       </div>
       <div className="absolute left-0 top-0 z-10 flex h-full flex-col justify-center space-y-4 px-5 py-5 text-white">
         <h2 className="text-2xl font-bold">{project.title}</h2>
-        <p>{project.description}</p>
+        <p>{project.description.substring(0, 115).concat('...')}</p>
       </div>
     </Link>
   )

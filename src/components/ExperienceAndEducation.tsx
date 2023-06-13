@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import VirtualNetLogo from '../assets/virtual-net-logo-icon.png'
+import DevLaunchersLogo from '../assets/devlaunchers.jpg'
 import Cruzeiro from '../assets/cruzeirodosul.png'
 import Explorer from '../assets/explorer.png'
 import Link from 'next/link'
@@ -11,20 +11,24 @@ export default function ExperienceAndEducation() {
         <h2 className="text-2xl font-bold">Experiência profissional</h2>
         {/* Card de Experiência */}
         <div>
-          <div className="mt-6">
+          <div className="mt-6 space-y-2">
             <span className="font-extralight text-zinc-500">Maio 2023</span>
             <div className="mb-2 flex items-center gap-10">
-              <h3 className="font-bold">Virtual Net - Freelance</h3>
-              <Image className="w-12" src={VirtualNetLogo} alt="Logo" />
+              <h3 className="font-bold">Dev Launchers</h3>
+              <Image className="w-12" src={DevLaunchersLogo} alt="Logo" />
             </div>
-            <p className="mb-2">São Francisco, Pará</p>
-            <p>Site institucional para uma empresa provedora de internet.</p>
+            <p className="mb-2">Austin, Texas</p>
+            <p>
+              Desenvolvimento e manutenção do site da ONG e implementação de
+              novas funcionalidades utilizando tecnologias como TypeScript,
+              React.js e Next.js. Além do uso da Metodologa Ágil.
+            </p>
             <Link
-              className="text-blue-400 underline"
+              className="block text-blue-400 underline"
               target="_blank"
-              href="https://virtualnet.net.br/"
+              href="https://devlaunchers.org/"
             >
-              www.virtualnet.net.br
+              https://devlaunchers.org/
             </Link>
           </div>
         </div>
@@ -36,7 +40,7 @@ export default function ExperienceAndEducation() {
           <Image src={Cruzeiro} alt="Logo Cruzeiro do Sul" />
           <h3 className="font-bold">Ciências da Computação</h3>
           <p>
-            Cruzeiro do Sul,<br></br>2022 - 2025
+            Cruzeiro do Sul,<br></br>2022 - Presente
           </p>
         </div>
         <div className="mt-6 flex max-w-[190px] flex-col items-center text-center">
