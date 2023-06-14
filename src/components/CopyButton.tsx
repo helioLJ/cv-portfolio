@@ -27,7 +27,7 @@ export default function CopyButton({ content }: CopyButtonProps) {
       className="relative flex justify-end gap-2.5 transition-colors hover:text-zinc-400"
     >
       {content}
-      <Copy className="stroke-1 text-zinc-900" />
+      <Copy className="stroke-1 text-zinc-900 dark:text-gray-200" />
       <div
         className={`absolute -right-5 -top-7 rounded-md bg-green-500 px-2 py-1 text-xs text-white ${
           show ? 'opacity-1' : 'opacity-0'

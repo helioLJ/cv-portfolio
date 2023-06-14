@@ -12,8 +12,8 @@ export default function ExperienceAndEducation() {
         {/* Card de Experiência */}
         <div>
           <div className="mt-6 space-y-2">
-            <span className="font-extralight text-zinc-500">
-              Jun 2023 - Present
+            <span className="font-extralight text-zinc-500 dark:text-gray-200">
+              Jun 2023 - Presente
             </span>
             <div className="mb-2 flex items-center gap-10">
               <h3 className="font-bold">Dev Launchers</h3>

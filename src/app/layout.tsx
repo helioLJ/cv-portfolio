@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} overflow-x-hidden bg-zinc-100 px-4 py-11 font-sans text-zinc-900 sm:px-12 lg:px-36`}
+        className={`${poppins.variable} overflow-x-hidden bg-zinc-100 px-4 py-11 font-sans text-zinc-900 transition-colors dark:bg-zinc-800 dark:text-white sm:px-12 lg:px-36`}
       >
         <Header />
         {children}

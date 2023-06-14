@@ -7,7 +7,7 @@ export default function AboutMe() {
     <div className="mt-11 flex flex-col justify-between gap-16 sm:flex-row">
       {/* Left */}
       <div>
-        <h1 className="flex-1 text-3xl font-bold text-zinc-900 sm:text-4xl">
+        <h1 className="flex-1 text-3xl font-bold text-zinc-900 dark:text-white sm:text-4xl">
           Hélio Lúcio,<br></br>
           Desenvolvedor Frontend
         </h1>
@@ -51,8 +51,8 @@ export default function AboutMe() {
           target="_blank"
           className="flex justify-end gap-2.5 text-left font-bold transition-opacity hover:opacity-40"
         >
-          Download CV
-          <Download className="stroke-1 text-zinc-900 transition-transform" />
+          Curriculum Vitae
+          <Download className="stroke-1 text-zinc-900 transition-transform dark:text-gray-200" />
         </Link>
       </div>
     </div>
