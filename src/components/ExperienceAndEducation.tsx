@@ -21,9 +21,12 @@ export default function ExperienceAndEducation() {
             </div>
             <p className="mb-2">Austin, Texas</p>
             <p>
-              Desenvolvimento e manutenção do site da ONG e implementação de
-              novas funcionalidades utilizando tecnologias como TypeScript,
-              React.js e Next.js. Além do uso da Metodologa Ágil.
+              Como desenvolvedor de front-end na Dev Launchers, estou ganhando
+              valiosa experiência em programação. Utilizamos Next.js e React,
+              seguindo a metodologia ágil, o que me proporciona um profundo
+              conhecimento sobre o trabalho real de programação. Estou
+              aprendendo muito e desenvolvendo habilidades essenciais para minha
+              carreira.
             </p>
             <Link
               className="block text-blue-400 underline"

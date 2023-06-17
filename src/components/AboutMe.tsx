@@ -18,10 +18,16 @@ export default function AboutMe() {
           Disponível
         </div>
         <p className="mt-2">
-          Jovem programador entusiasmado e apaixonado por tecnologia,
-          especializado em desenvolvimento web frontend. Com habilidades sólidas
-          em JavaScript, ReactJS e Next.js, sou capaz de criar experiências
-          digitais atraentes e responsivas.
+          Jovem apaixonado por programação desde criança, sou um desenvolvedor
+          autodidata com um sólido background em programação. Atualmente, atuo
+          como desenvolvedor frontend (voluntário) na Devlaunchers, buscando
+          adquirir experiência para entrar no mercado de trabalho. Dedico meu
+          tempo livre a projetos pessoais que geram valor, explorando novas
+          tecnologias e aprimorando minhas habilidades de programação. Já
+          realizei trabalhos como freelancer, desenvolvendo soluções
+          personalizadas para atender às necessidades dos clientes. Meu objetivo
+          é crescer profissionalmente como desenvolvedor, contribuindo com meu
+          conhecimento e habilidades em um ambiente desafiador e inovador.
         </p>
       </div>
 
