@@ -53,7 +53,7 @@ export default function AboutMe() {
           </Link>
         </div>
         <Link
-          href="https://drive.google.com/file/d/11Ai4IFbb4vrRSGfGUDa15HMEPxtqiF0t/view?usp=sharing"
+          href="https://drive.google.com/file/d/1WEuvWEokVFF259aXiFqpyG0N_zDyWmTK/view?usp=sharing"
           target="_blank"
           className="flex justify-end gap-2.5 text-left font-bold transition-opacity hover:opacity-40"
         >
