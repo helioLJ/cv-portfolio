@@ -9,7 +9,7 @@ export default function AboutMe() {
       <div>
         <h1 className="flex-1 text-3xl font-bold text-zinc-900 dark:text-white sm:text-4xl">
           Hélio Lúcio,<br></br>
-          Desenvolvedor Frontend
+          Desenvolvedor Fullstack
         </h1>
         <div className="mt-6 flex items-center gap-2">
           <div className="relative h-3 w-7 cursor-pointer rounded-full bg-orange-200">
