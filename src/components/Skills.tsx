@@ -25,6 +25,9 @@ import Jest from '../assets/jest.png'
 import JSON from '../assets/json.png'
 import JWT from '../assets/jwt-3.svg'
 import Auth from '../assets/auth.png'
+import RQuery from '../assets/react-query.png'
+import RHForm from '../assets/react-hook-form.png'
+import Zod from '../assets/zod.png'
 
 export default function Skills() {
   return (
@@ -57,6 +60,23 @@ export default function Skills() {
         </div>
         <div className="flex h-12 w-12 items-center justify-center rounded-md border-2 border-solid border-zinc-500 bg-zinc-400 p-1.5">
           <Image src={Tailwind} title="Tailwind" alt="Tailwind Logo" />
+        </div>
+        <div className="flex h-12 w-12 items-center justify-center rounded-md border-2 border-solid border-zinc-500 bg-zinc-400 p-1.5">
+          <Image
+            src={RQuery}
+            title="React Tanstack Query"
+            alt="React Tanstack Query Logo"
+          />
+        </div>
+        <div className="flex h-12 w-12 items-center justify-center rounded-md border-2 border-solid border-zinc-500 bg-zinc-400 p-1.5">
+          <Image
+            src={RHForm}
+            title="React Hook Form"
+            alt="React Hook Form Logo"
+          />
+        </div>
+        <div className="flex h-12 w-12 items-center justify-center rounded-md border-2 border-solid border-zinc-500 bg-zinc-400 p-1.5">
+          <Image src={Zod} title="Zod" alt="Zod Logo" />
         </div>
         <div className="flex h-12 w-12 items-center justify-center rounded-md border-2 border-solid border-zinc-500 bg-zinc-400 p-1.5">
           <Image
