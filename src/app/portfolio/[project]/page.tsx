@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Github, Globe } from 'lucide-react'
 import { projectsData, projectsDataProps } from '@/lib/projects'
-// import Carousel from '@/components/Carousel'
+import Carousel from '@/components/Carousel'
 
 interface PageProps {
   params: { project: string }
@@ -16,26 +16,28 @@ export default function Project({ params }: PageProps) {
 
   return (
     <>
-      <div className="mt-7 flex flex-col items-center justify-between gap-16">
+      <div className="mt-7 flex flex-col items-center justify-between gap-16 md:flex-row">
         <div className="flex w-full flex-col gap-10">
           <h1 className="text-3xl font-bold sm:text-4xl">{project.title}</h1>
           <p>{project.description}</p>
           <div className="flex gap-4">
             {project.live !== '' && (
               <Link
-                className="rounded bg-zinc-900 p-1 transition-all hover:-translate-y-0.5 hover:bg-zinc-700"
+                className="flex items-center gap-2 rounded bg-zinc-900 p-2 transition-all hover:-translate-y-0.5 hover:bg-zinc-700"
                 href={project.live}
                 target="_blank"
               >
+                <p className="text-white">Veja ao vivo</p>
                 <Globe className="text-zinc-50" />
               </Link>
             )}
             {project.github !== '' && (
               <Link
-                className="rounded bg-zinc-900 p-1 transition-all hover:-translate-y-0.5 hover:bg-zinc-700"
+                className="flex items-center gap-2 rounded bg-zinc-900 p-2 transition-all hover:-translate-y-0.5 hover:bg-zinc-700"
                 href={project.github}
                 target="_blank"
               >
+                <p className="text-white">GitHub Repo</p>
                 <Github className="text-zinc-50" />
               </Link>
             )}
@@ -61,7 +63,14 @@ export default function Project({ params }: PageProps) {
           />
         </div>
       </div>
-      {/* {project.gallery.length > 0 && <Carousel slides={project.gallery} />} */}
+      {project.gallery.length > 0 && (
+        <div className="mt-16 space-y-4">
+          <h1 className="text-center text-3xl font-bold sm:text-4xl">
+            Demonstração
+          </h1>
+          <Carousel slides={project.gallery} />
+        </div>
+      )}
     </>
   )
 }

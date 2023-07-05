@@ -26,7 +26,7 @@ export default function Carousel({ slides }: CarouselProps) {
   }
 
   return (
-    <div className="group relative m-auto h-[500px] w-full max-w-[1400px] px-4 py-16">
+    <div className="group relative m-auto h-screen w-full max-w-[1400px] px-4">
       <div
         style={{
           background: `url(${slides[currentIndex]}) no-repeat center / contain`,
